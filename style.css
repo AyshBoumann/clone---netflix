@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.background-overlay {
+    background-image: url('img/backgroundLogin.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    position: relative;
+    padding-bottom: 100px; /* Espaço para o rodapé */
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 200px;
+}
+
+.logo-container img {
+    width: 150px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.login-box {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 60px;
+    border-radius: 10px;
+    width: 450px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    outline: none;
+    font-size: 16px;
+    background: rgba(22, 22, 22, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.divider {
+    color: #b3b3b3;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #e50914;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f40612;
+}
+
+.access-code-btn {
+    background: rgba(128, 128, 128, 0.5); /* Fundo cinza transparente */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.access-code-btn:hover {
+    background: rgba(128, 128, 128, 0.7); /* Escurece um pouco no hover */
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.forgot-password a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline; /* Sublinha o texto ao passar o mouse */
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.remember-me input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #070707;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.remember-me input[type="checkbox"]:checked {
+    background-color: white;
+}
+
+.remember-me input[type="checkbox"]:checked::before {
+    content: '✔';
+    font-size: 14px;
+    color: gray;
+    position: absolute;
+    top: 0;
+    left: 4px;
+}
+
+.signup-section {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.signup-section p {
+    color: #b3b3b3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.signup-section a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.signup-section a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    font-size: 11.8px;
+    color: #9a9a9a;
+    margin-top: 20px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.learn-more {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1a73e8;
+    margin-left: 5px;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    top: 18.5px;
+    right: 63px;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(189, 186, 186);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Permite o rodapé aparecer depois do conteúdo */
+    text-align: left;
+    padding-left: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    height: 100%; /* Garante que o conteúdo ocupe a altura total do rodapé */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+}
+
+.footer span {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.top-links,
+.bottom-links, .bottom-links2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: left;
+    height: 60.5px;
+}
+
+.top-links a {
+    color: rgb(189, 186, 186);
+    font-size: 13px;
+    text-decoration: none;
+    
+}
+
+.bottom-links a, .bottom-links2 a {
+    color: rgb(189, 186, 186);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-links a:hover,
+.bottom-links a:hover, .bottom-links2 a:hover {
+    text-decoration: underline;
+}
+
+.select-wrapper {
+    display: flex;
+    align-items: center;
+    background-color:rgba(79, 78, 78, 0.5); /* Fundo cinza */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 5px; /* Espaçamento interno */
+    width: 120.5px;
+    height: 38.5px;
+}
+
+.select-wrapper i {
+    color: rgb(189, 186, 186); /* Cor do ícone */
+    font-size: 16px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaço entre o ícone e o select */
+}
+
+select {
+    background-color: transparent; /* Fundo transparente para o select */
+    color: rgb(189, 186, 186); /* Cor do texto */
+    border: none; /* Remove bordas padrão */
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px; /* Ajusta a altura para preencher o contêiner */
+    width: 100px; /* Ajusta a largura para preencher o contêiner */
+}
+
+select:focus {
+    outline: none; /* Remove o contorno ao focar */
+}
